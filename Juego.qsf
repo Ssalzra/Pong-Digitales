@@ -1,0 +1,129 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+# Date created = 22:05:37  May 13, 2024
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		Juego_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone III"
+set_global_assignment -name DEVICE EP3C16F484C6
+set_global_assignment -name TOP_LEVEL_ENTITY Pong
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "22:05:37  MAY 13, 2024"
+set_global_assignment -name LAST_QUARTUS_VERSION 13.1
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VHDL_FILE x_yCoords.vhd
+set_global_assignment -name VHDL_FILE x_ymove.vhd
+set_global_assignment -name VHDL_FILE Vel_bola.vhd
+set_global_assignment -name VHDL_FILE univ_bin_counter.vhd
+set_global_assignment -name VHDL_FILE SelectordeSenal.vhd
+set_global_assignment -name VHDL_FILE register_file.vhd
+set_global_assignment -name VHDL_FILE Pong.vhd
+set_global_assignment -name VHDL_FILE P2_racket_position.vhd
+set_global_assignment -name VHDL_FILE P1_racket_position.vhd
+set_global_assignment -name VHDL_FILE nBitComparator.vhd
+set_global_assignment -name VHDL_FILE mydff.vhd
+set_global_assignment -name VHDL_FILE my_dff_1.vhd
+set_global_assignment -name VHDL_FILE mux4_1.vhd
+set_global_assignment -name VHDL_FILE mux2_1.vhd
+set_global_assignment -name VHDL_FILE mtx_pkg.vhd
+set_global_assignment -name VHDL_FILE ManejoImagenAnimada.vhd
+set_global_assignment -name VHDL_FILE ManejoImagen.vhd
+set_global_assignment -name VHDL_FILE ledMatrixController.vhd
+set_global_assignment -name VHDL_FILE Imagenes_FSM.vhd
+set_global_assignment -name VHDL_FILE Imagen.vhd
+set_global_assignment -name VHDL_FILE edge_detect.vhd
+set_global_assignment -name VHDL_FILE decoder4_16.vhd
+set_global_assignment -name VHDL_FILE decoder3_8.vhd
+set_global_assignment -name VHDL_FILE CuentaAtras.vhd
+set_global_assignment -name VHDL_FILE bin_to_sseg.vhd
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_T14 -to btn_dwn_P1
+set_location_assignment PIN_T15 -to btn_dwn_P2
+set_location_assignment PIN_U12 -to btn_up_P1
+set_location_assignment PIN_V15 -to btn_up_P2
+set_location_assignment PIN_G21 -to clk
+set_location_assignment PIN_U15 -to cols[15]
+set_location_assignment PIN_AA19 -to cols[14]
+set_location_assignment PIN_AA17 -to cols[13]
+set_location_assignment PIN_AA20 -to cols[12]
+set_location_assignment PIN_Y17 -to cols[11]
+set_location_assignment PIN_AB20 -to cols[10]
+set_location_assignment PIN_AB19 -to cols[9]
+set_location_assignment PIN_AB18 -to cols[8]
+set_location_assignment PIN_R11 -to cols[7]
+set_location_assignment PIN_U10 -to cols[6]
+set_location_assignment PIN_Y7 -to cols[5]
+set_location_assignment PIN_T9 -to cols[4]
+set_location_assignment PIN_V6 -to cols[3]
+set_location_assignment PIN_U8 -to cols[2]
+set_location_assignment PIN_V7 -to cols[1]
+set_location_assignment PIN_U9 -to cols[0]
+set_location_assignment PIN_J6 -to ena
+set_location_assignment PIN_G15 -to Puntaje_P1[6]
+set_location_assignment PIN_D19 -to Puntaje_P1[5]
+set_location_assignment PIN_C19 -to Puntaje_P1[4]
+set_location_assignment PIN_B19 -to Puntaje_P1[3]
+set_location_assignment PIN_A19 -to Puntaje_P1[2]
+set_location_assignment PIN_F15 -to Puntaje_P1[1]
+set_location_assignment PIN_B18 -to Puntaje_P1[0]
+set_location_assignment PIN_F13 -to Puntaje_P2[6]
+set_location_assignment PIN_F12 -to Puntaje_P2[5]
+set_location_assignment PIN_G12 -to Puntaje_P2[4]
+set_location_assignment PIN_H13 -to Puntaje_P2[3]
+set_location_assignment PIN_H12 -to Puntaje_P2[2]
+set_location_assignment PIN_F11 -to Puntaje_P2[1]
+set_location_assignment PIN_E11 -to Puntaje_P2[0]
+set_location_assignment PIN_T12 -to rows[7]
+set_location_assignment PIN_R12 -to rows[6]
+set_location_assignment PIN_R14 -to rows[5]
+set_location_assignment PIN_T10 -to rows[4]
+set_location_assignment PIN_AA18 -to rows[3]
+set_location_assignment PIN_AB7 -to rows[2]
+set_location_assignment PIN_AB17 -to rows[1]
+set_location_assignment PIN_W17 -to rows[0]
+set_location_assignment PIN_H5 -to rst
+set_location_assignment PIN_F1 -to start
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
